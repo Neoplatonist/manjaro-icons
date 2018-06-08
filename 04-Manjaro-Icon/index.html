@@ -1,0 +1,67 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta http-equiv="X-UA-Compatible" content="ie=edge">
+  <title>Manjaro Icon</title>
+
+  <style>
+    body {
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      height: 100vh;
+      width: 100vw;
+    }
+
+    #wrapper {
+      display: grid;
+      grid-template-rows: 1fr 1fr 1fr;
+      grid-template-columns: 1fr 1fr 1fr;
+      grid-template-areas:
+        "block1 block1 block4"
+        "block2 block3 block4"
+        "block2 block3 block4";
+      height: 400px;
+      width: 400px;
+      border-radius: 50%;
+      overflow: hidden;
+    }
+
+    #block1 {
+      grid-area: block1;
+      background-color: teal;
+      border-bottom-right-radius: 10px;
+    }
+
+    #block2 {
+      grid-area: block2;
+      background-color: teal;
+    }
+
+    #block3 {
+      grid-area: block3;
+      background-color: teal;
+      margin: 20px 0 0 20px;
+      border-radius: 10px 10px 0 0;
+    }
+
+    #block4 {
+      grid-area: block4;
+      background-color: teal;
+      margin-left: 20px;
+    }
+  </style>
+</head>
+<body>
+
+  <div id="wrapper">
+    <div id="block1"></div>
+    <div id="block2"></div>
+    <div id="block3"></div>
+    <div id="block4"></div>
+  </div>
+
+</body>
+</html>
