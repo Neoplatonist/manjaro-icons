@@ -1,0 +1,63 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta http-equiv="X-UA-Compatible" content="ie=edge">
+  <title>Manjaro Icon</title>
+
+  <style>
+    body {
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      height: 100vh;
+      width: 100vw;
+    }
+
+    #wrapper {
+      padding: 120px;
+      display: grid;
+      grid-template-columns: repeat(3, 1fr);
+      grid-template-rows: repeat(5, 1fr);
+      grid-template-areas: 
+        "level1 blank level3"
+        "level1 blank level3"
+        "level1 level2 level3"
+        "level1 level2 level3"
+        "level1 level2 level3";
+      height: 400px;
+      width: 400px;
+      background-color: green;
+      border-radius: 50%;
+    }
+
+    #level1 {
+      grid-area: level1;
+      background-color: white;
+      margin-right: 15px;
+    }
+
+    #level2 {
+      grid-area: level2;
+      background-color: white;
+      margin: 0 15px;
+    }
+
+    #level3 {
+      grid-area: level3;
+      background-color: white;
+      margin-left: 15px;
+    }
+  </style>
+</head>
+<body>
+
+  <div id="wrapper">
+    <div id="level1"></div>
+    <div id="level2"></div>
+    <div id="level3"></div>
+  </div>
+
+</body>
+</html>
