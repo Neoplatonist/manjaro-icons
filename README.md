@@ -1,4 +1,4 @@
-# Pure CSS Manjaro Icons
+# Pure HTML/CSS Manjaro Icons
 
 All images are easy to resize or change their color.
 
